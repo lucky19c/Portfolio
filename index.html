@@ -1,219 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio Website</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/378ef5a442.js" crossorigin="anonymous"></script>
-</head>
-<body>
-     <div id="header">
-        <div class="container">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Richie's Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
         <nav>
-            <img src="images/logo.png" class="logo">
-            <ul id="sidemenu">
-                <li><a href="#header">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <i class="fa-solid fa-x" onclick="closemenu()"></i>
-            </ul>
-            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            <div class="nav-container">
+                <div class="logo">
+                    <span>Richie</span>
+                </div>
+                <div class="links">
+                    <div class="link"><a href="#">Home</a></div>
+                    <div class="link"><a href="#">About</a></div>
+                    <div class="link"><a href="#">Skills</a></div>
+                    <div class="link"><a href="#">Services</a></div>
+                    <div class="link"><a href="#">Contact</a></div>
+                </div>
+                <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+            </div>
+                <div class="dropdown">
+                    <div class="links">
+                        <a href="#">Home</a>
+                        <a href="#">About</a>
+                        <a href="#">Skills</a>
+                        <a href="#">Serices</a>
+                        <a href="#">Contact</a>
+                        <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+                    </div>
+                </div>
         </nav>
-        <div class="header-text">
-            <p>Computer Engineering Student</p>
-            <h1>Hi, I'm <span>Richie</span> <br> from Philippines</h1>
-        </div>
-      </div>
-    </div>
-<!----------about------------>
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="images/main.png">
+        <section>
+            <div class="main-container">
+                <div class="image">
+                    <img src="main.jpg" alt="">
                 </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>Hello! I’m John Richmond C. Dela Cruz, a 22-year-old aspiring Front-End Developer and UI/UX Designer with a strong 
-                    passion for creating visually appealing and user-centered digital experiences. I am currently a 4th-year Bachelor of 
-                    Science in Computer Engineering student at De La Salle Lipa, where I continuously strengthen my technical and design skills. 
-                    Based in Lipa City, Batangas, Philippines, I aim to blend creativity with functionality to build intuitive, responsive, and 
-                    impactful digital interfaces.</p>
-
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                <div class="content">
+                    <h1 data-aos="fade-left">Hello, I'm <span>Richie</span></h1>
+                    <div class="typewriter">
+                        I'm a
+                        <span class="typewriter-text"></span>
+                        <label for=""></label>
                     </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
-                            <li><span>Web Development</span><br>Web app Development</li>
-                            <li><span>App Development</span><br>Building Android/iOS apps</li>
-                        </ul>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo non, voluptatum velit officia accusantium nulla voluptate consectetur soluta ducimus sunt totam pariatur odit magnam porro explicabo dicta id. Suscipit, asperiores!</p>
+                    <div class="social-links">
+                        <a href="#">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
                     </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>June 2025 - July 2025</span><br>On-the- Job Training, Junior Full Stack Developer</li>
-                            <li><span>August 2025 - Nov 2025</span><br>Library Intelligent System Assistant, Web Developer</li>
-                            <li><span>2022-2024</span><br>Class Mayor</li>
-                            <li><span>2024-2025</span><br>DLSL ACES, Associate Secretary</li>
-                            <li><span>2025-2026</span><br>DLSL ACES, Executive Secretary</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>2022-2026</span><br>Bachelor of Science in Computer Engineering</li>
-                            <li><span>2016-2022</span><br>High School at De La Salle Lipa</li>
-                            <li><span>2010-2016</span><br>Elementary at St. Joseph School</li>
-                        </ul>
+                    <div class="btn">
+                        <button>Hire me</button>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-<!--services-->
-<div id="services">
-    <div class="container">
-        <h1 class="sub-title">My Services</h1>
-        <div class="services-list">
-            <div>
-                <i class="fa-solid fa-code"></i>
-                <h2>Web Development</h2>
-                <p>I create responsive and user-friendly websites using HTML, CSS, and JavaScript. Each project focuses on clean structure, modern design, and interactive functionality, ensuring optimal performance, accessibility, and compatibility across different devices and browsers.</p>
-                <a href="#">Learn more</a>
-            </div>
-            <div>
-                <i class="fa-solid fa-crop-simple"></i>
-                <h2>UI/UX Design</h2>
-                <p>I design intuitive and visually consistent interfaces focused on usability and user experience. Through research, wireframing, and prototyping, I create designs that enhance user interaction while aligning with user needs and project goals.</p>
-                <a href="#">Learn more</a>
-            </div>
-            <div>
-                <i class="fa-brands fa-app-store-ios"></i>
-                <h2>App Design</h2>
-                <p>I design clean and engaging mobile and web app interfaces with a focus on usability and smooth user flow. My app designs prioritize clarity, consistency, and adaptability across different screen sizes and platforms.</p>
-                <a href="#">Learn more</a>
-            </div>
-        </div>
-    </div>
-</div>
-<!----------portfolio------------>
-<div id="portfolio">
-    <div class="container">
-        <h1 class="sub-title">My Work</h1>
-        <div class="work-list">
-            <div class="work">
-                <img src="images/work1.jpg">
-                <div class="layer">
-                    <h3>LISA Website</h3>
-                    <p>Thesis website. User and admin interface. Used to advance reserve a book at the DLSL LRC.</p>
-                    <a href="http://13.214.212.87/LISA/admin/dashboard/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </section>
+
+        <section class="about" id="about">
+            <div class="content">
+                <div class="title"><span>About Me</span></div>
+                <div class="about-details">
+                    <div class="left">
+                        <img src="main.jpg" alt=""/>
+                    </div>
+                    <div class="right">
+                        <div class="topic">Designing is My Passion</div>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus, repellat unde aperiam quo temporibus iusto rem ad fuga at doloribus provident quos laudantium culpa similique cumque tempora, hic nam. Quibusdam!
+                        </p>
+                        <div class="button">
+                            <button>Download CV</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="work">
-                <img src="images/work2.jpg">
-                <div class="layer">
-                    <h3>Likha Website</h3>
-                    <p>OJT website. Made in Flutterflow. It is a POS system for the members of the cooperative.</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </section>
+
+        <section class="skills" id="skills">
+            <div class="content">
+                <div class="title"><span>My Skills</span></div>
+                <div class="skill-details">
+                    <div class="text">
+                        <div class="topic">
+                            Skills Reflects Our Knowledge
+                        </div>
+                        <p data-aos="fade-right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non delectus doloribus, obcaecati dolore nam saepe magni, laboriosam officia tempora odio cum sequi eius deleniti qui reiciendis, nihil ab quis. Reiciendis.</p>
+                        <div class="experience">
+                            <div class="num">10</div>
+                            <div class="exp">
+                            Years Of<br/>
+                            Experience
+                            </div>
+                        </div>
+                        </div>
+                        <div class="boxes">
+
+                            <div class="box">
+                                <div class="topic">HTML</div>
+                                <div class="per">60%</div>
+                            </div>
+                
+                            <div class="box">
+                                <div class="topic">CSS</div>
+                                <div class="per">50%</div>
+                            </div>
+
+                            <div class="box">
+                                <div class="topic">JavaScript</div>
+                                <div class="per">30%</div>
+                            </div>
+
+                            <div class="box">
+                                <div class="topic">PHP</div>
+                                <div class="per">10%</div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section class="services" >
+            <div class="content">
+                <div class="title"><span>My Services</span></div>
+                <div class="boxes">
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fas fa-desktop"></i>
+                        </div>
+                        <div class="topic">Web Development</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad totam sapiente eligendi voluptatum aut obcaecati alias voluptas autem iure vero soluta, atque dolor modi ducimus. Eius temporibus eos aspernatur dignissimos.</p>
+                    </div>
+                    <div class="box">
+                        <div class="icon"></div>
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <div class="topic">Graphic Design</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore illum eos quibusdam, expedita officiis vel ut. Officia iusto sint illum nesciunt beatae aliquam, tempora fuga sequi delectus accusantium veniam nostrum?</p>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="topic">Digital Marketing</div>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab dicta eius nihil sequi ducimus deserunt, enim earum culpa ipsa, itaque necessitatibus. Minima deleniti eos libero adipisci id perspiciatis quas nam?</p>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <i class="fas fa-android"></i>
+                    </div>
+                    <div class="topic">Icon Design</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, repudiandae libero. Architecto est sunt fugit, non eum illum iure facilis veniam pariatur omnis aspernatur dignissimos delectus ullam iusto in autem!</p>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <i class="fas fa-camera-retro"></i>
+                    </div>
+                    <div class="topic">Photography</div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum doloribus magnam est delectus autem, porro error ipsam, quaerat eum, repudiandae quas cum minima et perspiciatis necessitatibus debitis? Tempore, harum exercitationem.</p>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <i class="fas fa-tablet-alt"></i>
+                    </div>
+                    <div class="topic">Apps Development</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi dolorem obcaecati nostrum quod delectus consectetur consequatur eaque aperiam voluptatibus nulla eligendi quidem veniam cupiditate, totam unde eveniet quam ipsam maxime?</p>
                 </div>
             </div>
-            <div class="work">
-                <img src="images/work3.jpg">
-                <div class="layer">
-                    <h3>Training</h3>
-                    <p>Some training websites I made to learn website development</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </section>
+            <section class="contact" id="contact">
+                <div class="contact" id="contact">
+                    <div class="title">
+                        <span>Contact Me</span>
+                    </div>
+                    <div class="text">Have Any Project?</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quod ab, voluptas recusandae temporibus consequatur, illum quaerat minima cum laudantium, voluptatum eligendi possimus nihil aspernatur tempora adipisci? Dolores, dignissimos sint!</p>
+                    <div class="button">
+                        <button>Let's Chat</button>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <a href="#" class="btn">See more</a>
-    </div>
-</div>
-<!-----contact------->
-<div id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fa-solid fa-paper-plane"></i> johnrichmondelacruz@gmail.com</p>
-                <p><i class="fa-solid fa-phone"></i> 0908 282 7387</p>
-                <div class="social-icons">
-                    <a href="https://www.facebook.com/luckydczz/"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://www.linkedin.com/in/john-richmond-dela-cruz-8b0407343/"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://www.instagram.com/luckydczz/"><i class="fa-brands fa-square-instagram"></i></a>
-                    <a href="https://github.com/lucky19c"><i class="fa-brands fa-github"></i></a>
+            </section>
+            <footer>
+                <div class="text">
+                    <span>Created By
+                        <a href="#">Richie</a>
+                        &#169;2025 All Rights Reserved.
+                    </span>
                 </div>
-                <a href="images/DelaCruz_CV.pdf" download class="btn btn2">Download CV</a>
-            </div>
-            <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="Email" placeholder="Your Email" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
-                </form>
-                <span id="msg"></span> 
-            </div>
-        </div>
-    </div>
-    <div class="copyright">
-        <p>Copyright © Richie. Made with <i class="fa-solid fa-heart"></i></p>
-    </div>
-</div>
-    <script>
-
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
-
-        function opentab(tabname){
-            for(tablink of tablinks){
-                tablink.classList.remove("active-link")
-            }
-            for(tabcontent of tabcontents){
-                tabcontent.classList.remove("active-tab")
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab")
-        }
-
-    </script>
-
-    <script>
-
-        var sidemenu = document.getElementById("sidemenu");
-
-        function openmenu(){
-            sidemenu.style.right = "0";
-        }
-
-         function closemenu(){
-            sidemenu.style.right = "-200px";
-        }
-    </script>
-
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbzk2_ALPzs0q6llTPGNikvwTmkMCRLn8SpXhHlXDeazBqUBezcYPZZ9kG5eoM9PJUzmhw/exec'
-        const form = document.forms['submit-to-google-sheet']
-        const msg = document.getElementById("msg")
-
-        form.addEventListener('submit', e => {
-            e.preventDefault()
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML = "Message sent successfully"
-            setTimeout(function(){
-                msg.innerHTML = ""
-            },5000)
-            form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-  })
-</script>
-</body>
+            </footer>
+        </section>
+    </body>
 </html>
